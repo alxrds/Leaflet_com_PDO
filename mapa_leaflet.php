@@ -3,9 +3,9 @@
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING & ~E_DEPRECATED);
 
 define('HOST', 'localhost');
-define('USER', 'alexandre.rodrigues');
-define('PASS', 'ygk86tf3yk2qbaddf39f');
-define('BASE', 'pci');
+define('USER', 'user);
+define('PASS', 'pass');
+define('BASE', 'bd');
 
 try {
     $conn = new pdo('mysql:host=' . HOST . ';dbname=' . BASE, USER, PASS);
@@ -52,7 +52,7 @@ if (!empty($_POST['bairro'])) {
 
 <head>
 
-    <title> Endereços Viáveis | Telemont </title>
+    <title> Endereços Viáveis </title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="icone_telemont.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
